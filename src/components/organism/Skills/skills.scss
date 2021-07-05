@@ -1,0 +1,19 @@
+.skills {
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    &Container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &-skill{
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+        justify-content: center;
+        padding: 10px;
+    }
+}

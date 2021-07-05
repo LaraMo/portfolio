@@ -1,0 +1,21 @@
+//import global styles
+@import './colors.scss';
+
+.global {
+    display: flex;
+    margin: auto;
+    max-width: 1200px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+p, section, div {
+    color: $textDark;
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    color: $secondary;
+    font-weight: bold;
+    text-decoration: none;
+}

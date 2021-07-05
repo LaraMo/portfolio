@@ -1,0 +1,57 @@
+@import '../../../styles/colors.scss';
+
+
+//local colors
+$tagsBg: #eee;
+$tagText: #999;
+.card {
+    &Container {
+        margin: 20px;
+    }
+    &-topTitle {
+        margin-bottom: -30px;
+        font-weight: bold;
+        font-size: 20px;
+        color: $tertiary;
+        opacity: 0.8;
+        text-align: center;
+        &-index {
+            @extend .card-topTitle;
+            text-align: left;
+            font-size: 40px;
+        }
+    }
+    &-right {
+        align-items: center;
+        display: flex;
+    }
+    &-titleDescLink {
+        padding: 10px 0 10px 5px;
+    }
+    &-link {
+        padding-top: 10px;
+    }
+    box-shadow: 0 8px 16px -8px rgba(0,0,0,0.4);
+    border-radius: 6px;
+    height: 300px;
+    justify-content: center;
+    width: 330px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 2fr 1fr;
+    padding: 45px 10px 10px 10px;
+    position: inherit;
+    border: none;
+    &-category {
+        font-size: 12px;
+        padding: 8px;
+        background: $tagsBg;
+        width: fit-content;
+        border-radius: 15px;
+        color: $tagText;
+        margin-right: -10px;
+    }
+    &-img {
+        width: 100px;
+    }
+}

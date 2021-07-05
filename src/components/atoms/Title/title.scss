@@ -1,0 +1,15 @@
+.title {
+    font-weight: bold;
+    color: #3D5A80;
+    &-reg {
+        @extend .title;
+        font-size: 20px;
+    }
+    &-medium {
+        font-size: 30px;
+    }
+    &-large {
+        @extend .title;
+        font-size: 44px;
+    }
+}
